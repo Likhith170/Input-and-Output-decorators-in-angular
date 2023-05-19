@@ -1,0 +1,13 @@
+
+<h1>INPUT AND OUTPUT DECORATORS</h1>
+<hr style="border-color: red;">
+
+<body>
+  
+<h1 style="color: rgb(221, 255, 0);">This is the parent component :</h1>
+<ul *ngFor="let user of users">
+  <li style="color: white;">{{user}}</li>
+</ul>
+
+<app-child [name]="currentName" [obj]="user" (dataEvent)="addUser($event)"></app-child>
+</body>
